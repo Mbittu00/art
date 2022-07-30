@@ -2,7 +2,8 @@ import './add.css'
 import { Link} from "react-router-dom";
 import { AiOutlineUser } from 'react-icons/ai';
 import { BiArrowBack } from 'react-icons/bi';
-import { RiLockPasswordLine } from 'react-icons/ri';
+import { BsFillPhoneFill } from 'react-icons/bs';
+import { FaBabyCarriage } from 'react-icons/fa';
 import {useState,useEffect}from'react'
 import axios from'axios'
 import {useNavigate} from "react-router-dom";
@@ -42,12 +43,12 @@ setLoad(true)
     onChange={(e)=>setName(e.target.value)}/>
     </div>
     <div>
-    <RiLockPasswordLine size='20px'/>
+    <BsFillPhoneFill size='20px'/>
     <input type='number' placeholder='phone number'
     onChange={(e)=>setPhone(e.target.value)}/>
     </div>  
     <div>
-    <RiLockPasswordLine size='20px'/>
+    <FaBabyCarriage size='20px'/>
     <input type='number' placeholder='age'
     onChange={(e)=>setAge(e.target.value)}/>
     </div>
