@@ -21,7 +21,12 @@ setLoad(true)
       alert('something is wrong')
       setLoad(false)
     }
-   };call() 
+   };
+   if (localStorage.getItem('token')) {
+     call() 
+   }else{
+     
+   }
   },[])
   let go=()=>{
     history('/add')

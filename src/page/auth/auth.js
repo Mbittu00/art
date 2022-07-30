@@ -19,7 +19,7 @@ setLoad(true)
   localStorage.setItem('token',str)
   history('/')
     } catch (e) {
-      alert(e)
+      alert('something is wrong')
       setLoad(false)
     }
   }
