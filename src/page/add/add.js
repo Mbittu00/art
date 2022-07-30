@@ -13,7 +13,7 @@ export default function Add(){
   let [age,setAge]=useState()
   let [load,setLoad]=useState(false)
   let login=async()=>{
-let uri='http://10.146.12.71:8080/cendident'
+let uri='https://art-two.vercel.app/cendident'
 setLoad(true)
     try {
       let token=localStorage.getItem('token')

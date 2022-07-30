@@ -10,7 +10,7 @@ export default function Home(){
   let [load,setLoad]=useState()
   useEffect(()=>{
    async function call() {
-     let uri='http://10.146.12.71:8080/get/all'
+     let uri='https://art-two.vercel.app/get/all'
 setLoad(true)
     try {
       let token=localStorage.getItem('token')

@@ -11,7 +11,7 @@ export default function Login(){
   let [password,setPasswore]=useState('')
   let [load,setLoad]=useState(false)
   let login=async()=>{
-let uri='http://10.146.12.71:8080/login'
+let uri='https://art-two.vercel.app/login'
 setLoad(true)
     try {
   let res=await axios.post(uri,{username,password})
