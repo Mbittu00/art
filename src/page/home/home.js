@@ -17,6 +17,7 @@ setLoad(true)
   let res=await axios.post(uri,{token})
   setCan(res.data)
   setLoad(false)
+  console.log(res.data)
     } catch (e) {
       alert('something is wrong')
       setLoad(false)
@@ -50,7 +51,10 @@ setLoad(true)
    <span>{e.name}</span>
    <span>Age {e.age}</span>
    </div>
+   <div>
    <span>{e.phone}</span>
+     <span>Group {e.group}</span>
+   </div>
     </div>
  ))
     }

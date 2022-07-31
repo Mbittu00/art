@@ -49,4 +49,15 @@
   align-items: center;
   justify-content: center;
   border-radius: 100%;
+}.auth>div>div>select{
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #b5b5b5;
+  display: flex;
+  justify-content: center;
+}.auth>div>div>select>option{
+  background: #e6e9eb;
 }
