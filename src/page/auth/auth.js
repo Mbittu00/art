@@ -40,7 +40,6 @@ setLoad(true)
     onChange={(e)=>setPasswore(e.target.value)}/>
     </div>
     <button onClick={login}>login</button>
-    <Link to='/register' className='bc'>register</Link>
     </div>
     </div>:<div className='load'>
     <div></div>
