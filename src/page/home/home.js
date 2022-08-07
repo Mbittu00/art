@@ -1,13 +1,13 @@
 import './home.css'
 import { IoIosColorPalette } from 'react-icons/io';
-import { AiOutlinePlus } from 'react-icons/ai';
+import { AiOutlinePlus,AiOutlineInfo } from 'react-icons/ai';
 import axios from'axios'
 import {useState,useEffect}from'react'
 import { useNavigate} from "react-router-dom";
 export default function Home(){
   let history=useNavigate()
   let [can,setCan]=useState([])
-  let [load,setLoad]=useState()
+  let [load,setLoad]=useState(false)
   useEffect(()=>{
    async function call() {
      let uri='https://art-two.vercel.app/get/all'
@@ -31,6 +31,9 @@ setLoad(true)
   },[])
   let go=()=>{
     history('/add')
+  }
+  let goo=()=>{
+    history('/info')
   }
   return (
     <>{!load?
@@ -62,6 +65,10 @@ setLoad(true)
     <div className='float'>
     <AiOutlinePlus size='40px' onClick={go}/>
     </div>
+    <div className='iinfo'>
+    <AiOutlineInfo size='30px' onClick={goo}/>
+    </div>
+    
     </div>:<div className='load'>
     <div></div>
     <span>Loading...</span>
