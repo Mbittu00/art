@@ -1,10 +1,9 @@
 import "./add.css";
-import { Link } from "react-router-dom";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiArrowBack } from "react-icons/bi";
 import { BsFillPhoneFill } from "react-icons/bs";
 import { FaBabyCarriage } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 export default function Add() {
